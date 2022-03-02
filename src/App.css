@@ -88,8 +88,8 @@ h1,h2,h3{
   margin-top: 10px;
 }
 .btn{
-  width: 15%;
-  background-color: rgb(19, 89, 146);
+  
+  background-color:red);
   color: white;
   font-size: 20px;
   border: none;
