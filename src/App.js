@@ -2,9 +2,10 @@ import { useEffect, useState } from 'react';
 import './App.css';
 
 function App() {
-  const [movieinfo,setMovieinfo]=useState("RRR");
-  const [title,setTitle]=useState("RRR");
+  const [movieinfo,setMovieinfo]=useState(null);
+  const [title,setTitle]=useState("saaho");
   useEffect(()=>{
+    getMovieData()
     ;
   },[])
 
