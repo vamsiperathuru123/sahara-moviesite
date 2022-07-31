@@ -2,11 +2,26 @@ import { useEffect, useState } from 'react';
 import './App.css';
 
 function App() {
+  
   const [movieinfo,setMovieinfo]=useState(null);
   const [title,setTitle]=useState("saaho");
+  
   useEffect(()=>{
-    getMovieData()
-    ;
+    let url=`https://omdbapi.com/?t=${"saaho"}&apikey=be4662f1`;
+    fetch(url)
+    .then((response)=>response.json())
+    .then((movie)=>{
+      setMovieinfo(movie);
+      console.log(movie);
+
+      
+    })
+    .catch((err)=>{
+      console.log(err);
+    })
+
+    
+    
   },[])
 
   function readTitle(value){
