@@ -89,9 +89,8 @@ h1,h2,h3{
 }
 .btn{
   
-  background-color:red);
-  color: white;
-  font-size: 20px;
+  background-color:red;
+  color: black;
   border: none;
   border-radius: 10px;
   outline: none;

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 
 function App() {
-  const [movieinfo,setMovieinfo]=useState(null);
+  const [movieinfo,setMovieinfo]=useState("RRR");
   const [title,setTitle]=useState("RRR");
   useEffect(()=>{
     ;
