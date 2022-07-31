@@ -42,6 +42,7 @@
   margin-left: 15%;
   padding-top: 20px;
   padding-bottom: 20px;
+  
 }
 .padd{
   padding: 15px;
@@ -50,7 +51,7 @@
   height: 40px;
   font: 18px;
   border-radius: 10px;
-  border:1px solid black;
+  border:1px solid white;
   outline: none;
   text-indent: 20px;
 }
@@ -60,7 +61,7 @@
 }
 .poster{
   height: 500px;
-  width: 38%;
+  width: 40%;
   overflow: hidden;
 
 }
@@ -94,8 +95,12 @@ h1,h2,h3{
 .btn{
   
   background-color:red;
-  color: black ;
+  color: white;
   border: none;
   border-radius: 10px;
   outline: none;
+}
+html{
+ background-color: black;
+ color: white; 
 }
