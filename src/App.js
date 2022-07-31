@@ -41,10 +41,16 @@ function App() {
       
     })
     .catch((err)=>{
+      
       console.log(err);
     })
 
   }
+  const handleSubmit = event => {
+    event.preventDefault();
+
+    getMovieData();
+  };
 
   return (
     <div className="App">
@@ -52,10 +58,10 @@ function App() {
         <div className="padd">
           <h1>Movie Search</h1>
           <div className="int-grp">
-            
+            <form className="int-grp" onSubmit={handleSubmit}>
               <input type="text" placeholder="Enter Movie Name"  onChange={(event)=>{readTitle(event.target.value)}} className="search-field" />
-            <button type='submit' className="btn" onClick={getMovieData}>Get Movie</button>
-            
+              <button type='submit' className="btn" onClick={getMovieData}>Get Movie</button>
+            </form>
           </div>
           <div className="movie">
             <div className="poster">
